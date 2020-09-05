@@ -4,6 +4,7 @@ import {Accordion, Card} from "react-bootstrap";
 import styles from '../components/styles/Index.module.css';
 import MainContainer from "../components/MainContainer";
 import CollapseCard from "../components/CollapseCard";
+import Purple from "../components/Purple";
 
 export default function Home() {
     return (
@@ -12,11 +13,9 @@ export default function Home() {
             <Topnav/>
 
             <div className={styles.flexContainer}>
-                <CollapseCard name={'Air Quality'}/>
+                <Purple/>
                 <CollapseCard name={'COVID'}/>
             </div>
-
-
 
 
         </>

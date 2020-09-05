@@ -1,6 +1,6 @@
 import {Accordion, Card} from "react-bootstrap";
 
-export default function CollapseCard({name}) {
+export default function CollapseCard({name, children}) {
     return (
 
         <Accordion style={{marginBottom: '15px'}}>
@@ -9,7 +9,7 @@ export default function CollapseCard({name}) {
                 + {name}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
-                <Card.Body>Smoky</Card.Body>
+                <Card.Body>{children}</Card.Body>
             </Accordion.Collapse>
         </Card>
         </Accordion>
