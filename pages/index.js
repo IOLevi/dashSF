@@ -3,6 +3,8 @@ import Topnav from "../components/Topnav";
 import styles from '../components/styles/Index.module.css';
 import CollapseCard from "../components/CollapseCard";
 import Purple from "../components/Purple";
+import Hospitalizations from "../components/Hospitalizations";
+import MayorFeed from "../components/MayorFeed";
 
 export default function Home() {
     return (
@@ -19,8 +21,8 @@ export default function Home() {
 
                 </div>
                 <div className={styles.column}>
-                    <CollapseCard name={'Hospitalizations'}/>
-                    <CollapseCard name={'DingoDong'}/>
+                    <Hospitalizations/>
+                    <MayorFeed/>
                     <CollapseCard name={'Closed streets'}/>
                 </div>
 
