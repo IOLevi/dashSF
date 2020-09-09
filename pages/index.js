@@ -6,12 +6,24 @@ import Purple from "../components/Purple";
 import Hospitalizations from "../components/Hospitalizations";
 import MayorFeed from "../components/MayorFeed";
 import ClosedStreets from "../components/ClosedStreets";
+import {useState} from "react";
 
 export default function Home() {
+
+    const [toggleState, setToggleState] = useState(false);
+
+    const flip = () => {
+        setToggleState(!toggleState);
+    };
+
+    let darkMode;
+    toggleState ? darkMode = {style: {background: 'grey'}} : darkMode = {};
     return (
-        <>
+        <div {...darkMode}>
+            {/* TODO: Add user login and a settings menu where you can toggle which boxes you want to load
+            pull it down as a list of dict keys, and for each key render the associated react component*/}
             <Header/>
-            <Topnav/>
+            <Topnav toggleState={toggleState} flip={flip}/>
 
             <div className={styles.row}>
                 <div className={styles.column}>
@@ -28,6 +40,6 @@ export default function Home() {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }

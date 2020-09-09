@@ -1,7 +1,6 @@
 .topnav {
     display: flex;
     flex-flow: row nowrap;
-    align-items: baseline;
     justify-content: space-between;
     width: 100%;
     height: 50px;
@@ -10,6 +9,7 @@
     top: 0;
     border-bottom: solid;
     margin: 0 0 15px 0;
+    align-items: center;
 }
 .textLogo {
     position: relative;
