@@ -5,7 +5,7 @@ export default function Header() {
         <>
             <Head>
                 <meta name="robots" content="noindex"/>
-                <title>SF PACK</title>
+                <title>- SF</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
         </>

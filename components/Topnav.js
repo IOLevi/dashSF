@@ -5,7 +5,7 @@ export default function Topnav() {
     return (
         <div className={styles.topnav}>
             <div className={styles.textLogo}>
-                UNPACKSF
+                - SF
             </div>
             <div className={styles.icons}>
                 <a href={'https://twitter.com/prgrssnrecords'}><img src={'/twitter.svg'}/></a>

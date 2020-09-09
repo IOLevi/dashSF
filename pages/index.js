@@ -5,6 +5,7 @@ import CollapseCard from "../components/CollapseCard";
 import Purple from "../components/Purple";
 import Hospitalizations from "../components/Hospitalizations";
 import MayorFeed from "../components/MayorFeed";
+import ClosedStreets from "../components/ClosedStreets";
 
 export default function Home() {
     return (
@@ -16,7 +17,7 @@ export default function Home() {
                 <div className={styles.column}>
                     <Purple/>
                     <CollapseCard name={'COVID'}/>
-                    <CollapseCard name={'Closed streets'}/>
+                    <ClosedStreets/>
 
 
                 </div>
