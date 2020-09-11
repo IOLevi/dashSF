@@ -2,7 +2,7 @@ import styles from './styles/Switch.module.css';
 
 const Switch = ({ isOn, handleToggle }) => {
     return (
-        <>
+        <span>
             <input
                 checked={isOn}
                 onChange={handleToggle}
@@ -16,7 +16,7 @@ const Switch = ({ isOn, handleToggle }) => {
             >
                 <span className={styles.reactSwitchButton} />
             </label>
-        </>
+        </span>
     );
 };
 

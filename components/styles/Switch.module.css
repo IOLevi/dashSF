@@ -1,11 +1,11 @@
 .reactSwitchCheckbox {
     height: 0;
     width: 0;
-visibility: hidden;
+    visibility: hidden;
 }
 
 .reactSwitchLabel {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;

@@ -8,6 +8,8 @@ import MayorFeed from "../components/MayorFeed";
 import ClosedStreets from "../components/ClosedStreets";
 import {useState} from "react";
 
+const ThemeContext = React.createContext('false');
+
 export default function Home() {
 
     const [toggleState, setToggleState] = useState(false);
@@ -19,9 +21,12 @@ export default function Home() {
     let darkMode;
     toggleState ? darkMode = {style: {background: 'grey'}} : darkMode = {};
     return (
-        <div {...darkMode}>
+        <div {...darkMode} style={{width: '100%'}}>
             {/* TODO: Add user login and a settings menu where you can toggle which boxes you want to load
             pull it down as a list of dict keys, and for each key render the associated react component*/}
+
+            {/*Consume Theme at each level to customize look of component using useContext*/}
+            {/*<ThemeContext.Provider value={toggleState}>*/}
             <Header/>
             <Topnav toggleState={toggleState} flip={flip}/>
 
